@@ -1,5 +1,6 @@
-const dummy: string = 'dummy'
+import {dbConnection} from './helper'
 
 export default function hello() {
-   return dummy
+   const db = dbConnection('dummy')
+   return db
 }
